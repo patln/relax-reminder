@@ -1,6 +1,5 @@
 let width = screen.width;
 
-
 // Scroll throttler
 const throttle = function (fn, delay) { 
 
@@ -35,11 +34,8 @@ const throttle = function (fn, delay) {
     }
   } 
 
-   
   // This listener will run runOnScroll at most once per 250ms.
   $(document).on('scroll', throttle(runOnScroll, 100)); 
-
-
 
 $(".mobile-nav-button-burger").on("click", function(){
     $(this).css("display", "none");
