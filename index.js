@@ -1,22 +1,5 @@
 let width = screen.width;
 
-let slideUp = anime({
-    targets: '.hero-main-text',
-    translateY: [
-        { value: 100, duration: 700 },
-        { value: 0, duration: 800, delay: 600 }
-      ],
-    opacity: [
-        { value: 0, duration: 300 },
-        { value: 1, duration: 1500, delay: 800 }
-      ],
-    duration: 3000,
-    easing: 'easeInOutQuart'
-  });
-
-    slideUp.restart;
-    slideUp.reverse;
-
 
 // Scroll throttler
 const throttle = function (fn, delay) { 
