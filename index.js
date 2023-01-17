@@ -1,5 +1,14 @@
 let width = screen.width;
 
+window.onload = (event) => {
+    console.log("Loading anim");
+    setTimeout(loadingAnim, 1000);
+  };
+
+function loadingAnim() {
+    $(".hero-main-text").addClass("--onLoad");
+}
+
 // Scroll throttler
 const throttle = function (fn, delay) { 
 

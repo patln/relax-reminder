@@ -93,6 +93,7 @@ a:hover {
 
 .icon {
     font-size: 1.1rem;
+    color: black;
 }
 
 .mobile-button {
@@ -201,6 +202,7 @@ a:hover {
     width: auto;
     object-fit: cover;
     object-position: center bottom;
+    -webkit-transition: all .5s linear;
     transition: all .5s linear;
 }
 
@@ -213,6 +215,14 @@ a:hover {
     font-weight: 700;
     font-size: 10rem;
     line-height: .9;
+    transform: translateY(-400px);
+    opacity: 0;
+    transition: transform 1s ease-in-out .5s, opacity 1.5s ease-in-out .3s;
+}
+
+.--onLoad {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .hero-subtext {
@@ -241,6 +251,7 @@ a:hover {
     width: auto;
     object-fit: cover;
     object-position: center bottom;
+    -webkit-transition: all .5s linear;
     transition: all .5s linear;
 }
 
